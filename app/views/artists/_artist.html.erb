@@ -1,0 +1,7 @@
+<div id="<%= dom_id artist %>">
+  <h1><%= artist.name %></h1>
+  <% artist.paintings.each do |painting| %>
+    <%= painting.title  %>
+    <%= render painting %>
+  <% end %>
+</div>
